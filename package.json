@@ -15,5 +15,16 @@
     "react-typewriter-effect": "^1.1.0",
     "slick-carousel": "^1.8.1",
     "tailwindcss": "^4.1.11"
-  }
+  },
+  "name": "project",
+  "version": "1.0.0",
+  "description": "A responsive, modern portfolio website built with HTML, CSS, and JavaScript.",
+  "main": "tailwind.config.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
