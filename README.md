@@ -1,40 +1,118 @@
-# Sai Seshu Adimulam - Portfolio Website
+# Modern Portfolio Design System
 
-A responsive, modern portfolio website built with HTML, CSS, and JavaScript.
+A comprehensive design system and portfolio implementation using React with modern CSS architecture.
 
 ## Features
 
-- Responsive design that works on all devices
-- Dark/light mode toggle with local storage persistence
-- Modern, clean aesthetic with subtle animations (AOS library)
-- Interactive elements and smooth transitions
-- Mobile-friendly navigation
+### Design System
+- **Typography**: Inter (body) + Space Grotesk (headings) with modular scale
+- **Color Palette**: Professional color scheme with primary (#2D3047), secondary (#419D78), and accent (#E09F3E) colors
+- **Component Library**: Reusable UI components with consistent styling
+- **Responsive Design**: Mobile-first approach with defined breakpoints
+- **Animation System**: Subtle hover effects and transitions
 
-## Structure
+### Components
+- **Buttons**: Primary, secondary, accent, outline, and ghost variants
+- **Cards**: Flexible card system with header, body, and footer sections
+- **Forms**: Styled inputs, textareas, and form validation
+- **Navigation**: Responsive header with mobile menu
+- **Badges**: Status and category indicators
 
-- `/css` - Contains the stylesheet
-- `/js` - Contains JavaScript functionality
-- `/images` - Contains profile image and other assets
-- `/resume` - Contains downloadable resume PDF
+## File Structure
 
-## Setup Instructions
+```
+src/
+├── styles/
+│   ├── variables.css      # CSS custom properties
+│   ├── base.css          # Base styles and typography
+│   ├── components.css    # Component styles
+│   ├── layout.css        # Layout and grid systems
+│   └── animations.css    # Animation definitions
+├── components/
+│   ├── ui/               # Reusable UI components
+│   ├── layout/           # Layout components
+│   └── sections/         # Page sections
+└── App.jsx               # Main application
+```
 
-1. Make sure you have your profile image saved as `profile.jpg` in the `/images` directory
-2. Add your resume PDF as `SaiSeshuAdimulam_Resume.pdf` in the `/resume` directory
-3. Open `index.html` in a web browser to view the portfolio
+## Design Specifications
 
-## Customization
+### Typography Scale
+- **Font Families**: Inter (400, 600) for body, Space Grotesk (500, 700) for headings
+- **Modular Scale**: 1.25 ratio from 12px to 60px
+- **Line Heights**: Tight (1.25), Normal (1.5), Relaxed (1.625)
 
-To customize the website:
+### Color System
+```css
+Primary: #2D3047 (deep blue-gray)
+Secondary: #419D78 (forest green)  
+Accent: #E09F3E (warm orange)
+Background: #F5F5F5 (light gray)
+Text: #2B2D42 (dark gray)
+```
 
-- Edit the HTML content in `index.html` to update your information
-- Modify styles in `css/style.css` to change the appearance
-- Update functionality in `js/main.js` if needed
+### Spacing System
+- **Base Unit**: 8px
+- **Scale**: 8px, 16px, 24px, 32px, 40px, 48px, 64px, 80px, 96px, 128px, 160px
 
-## Note
+### Responsive Breakpoints
+- **Mobile**: 320px - 480px
+- **Tablet**: 481px - 768px  
+- **Desktop**: 769px+
 
-The contact form is currently set up for demonstration purposes only. To make it functional, you would need to implement a backend service to process form submissions.
+## Usage Examples
+
+### Button Component
+```jsx
+import { Button } from './components/ui';
+
+<Button variant="primary" size="lg">Primary Button</Button>
+<Button variant="outline" size="sm">Outline Button</Button>
+```
+
+### Card Component
+```jsx
+import { Card } from './components/ui';
+
+<Card>
+  <Card.Header>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Subtitle>Card Subtitle</Card.Subtitle>
+  </Card.Header>
+  <Card.Body>
+    Card content goes here
+  </Card.Body>
+  <Card.Footer>
+    Footer actions
+  </Card.Footer>
+</Card>
+```
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Browser Support
+- Chrome 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
+
+## Accessibility
+- WCAG 2.1 AA compliant
+- Keyboard navigation support
+- Screen reader optimized
+- Reduced motion support
 
 ---
 
-Created by Cascade AI for Sai Seshu Adimulam, 2025.
+Modern design system implementation for professional portfolio websites.
